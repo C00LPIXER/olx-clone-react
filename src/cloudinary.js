@@ -8,7 +8,7 @@ export const uploadToCloudinary = async (file) => {
 
   try {
     const response = await axios.post(
-      `https://api.cloudinary.com/v1_1/dlepjhjb4/image/upload`,
+      `${import.meta.env.VITE_CLOUDINARY_URL}/image/upload`,
       formData
     );
     return response.data.secure_url;
