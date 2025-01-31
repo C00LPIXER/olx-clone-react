@@ -24,7 +24,6 @@ const ProductDetail = () => {
     }
   };
 
-  console.log("product", product);
   return (
     <>
       <Navbar />
@@ -84,7 +83,12 @@ const ProductDetail = () => {
                   {product.title}
                 </h1>
                 <p className="pt-6 text-xl">{product.category}</p>
-                <p><span className="font-medium text-[#002f349d]">Location:</span>{" "} {product.location}</p>
+                <p>
+                  <span className="font-medium text-[#002f349d]">
+                    Location:
+                  </span>{" "}
+                  {product.location}
+                </p>
               </div>
 
               <div className="w-1/3 min-h-11 bg-white rounded p-4">
@@ -104,7 +108,7 @@ const ProductDetail = () => {
                 <hr />
 
                 <p className="pt-4 font-medium text-[#0015179f]">
-                    {product.description}
+                  {product.description}
                 </p>
               </div>
 

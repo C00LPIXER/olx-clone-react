@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ProductCard = () => {
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true); // Initialize loading state
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     displayProducts();
